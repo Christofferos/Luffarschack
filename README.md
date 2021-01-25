@@ -1,2 +1,2 @@
 # Luffarschack
-<img src="./background/background.png"/>
+<img src="./background/background.jpg"/>
