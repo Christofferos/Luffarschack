@@ -1,0 +1,127 @@
+/* Use a minimum of 5 attributes! (Requirement) */
+html {
+  background-image: url("./background/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.app {
+  height: 100%; /* 92% */
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.overlay {
+  height: 20rem;
+}
+/* Pseudo element = to get transparent background */
+.overlay::after {
+  content: "";
+  display: flex;
+  position: relative;
+  margin: auto;
+  bottom: 90%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  z-index: -1;
+  background: rgba(252, 111, 66, 0.55);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin: 0 5px;
+  width: 1.5rem;
+}
+
+#startGame {
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  padding: 0.65rem 0.65rem;
+  cursor: pointer;
+  background-color: darkorange;
+  transition: padding 0.25s;
+  transition-timing-function: ease-in-out;
+}
+
+#startGame:hover {
+  background-color: gold;
+  padding: 0.25rem 0.25rem;
+}
+
+#board {
+  margin: auto auto;
+}
+
+.cell {
+  border: solid black 2px;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #cb2c3e;
+  opacity: 0.8;
+
+  vertical-align: bottom;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 25px;
+}
+
+#messagePromt {
+  color: red;
+}
+
+/* */
+/* Extra html tags for end promt */
+/* */
+
+.endgame {
+  display: none;
+  width: 200px;
+  top: 47%;
+  background-color: rgba(205, 133, 63, 0.6);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  font-size: 30px;
+}
+
+.button {
+  background-color: #cb2c3e;
+  border: 1px solid black;
+  color: black;
+  padding: 0rem 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+}

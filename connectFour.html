@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Connect Four</title>
+  <link rel="stylesheet" href="connectFour.css" />
+  <link rel="icon" type="image/png" href="./favicon/favicon.png" />
+
+</head>
+
+<body>
+  <div class="app">
+    <div class="overlay">
+      <h1>Select board size:</h1>
+      <span>Number of rows: <input id="inputRow" type="text" placeholder="3"></input></span>
+      <span>Number of columns: <input id="inputCol" type="text" placeholder="3"></input></span>
+      <span>In order to win, connect: <input id="inputWin" type="text" placeholder="3"></input></span>
+      <span id="messagePromt"></span>
+      <button id="startGame" type="text">Start Game</button>
+    </div>
+
+    <h1 class="inGameHeader"></h1>
+    <div id="board"></div>
+
+    <div class="endgame">
+      <div class="text"></div>
+      <a class="button">Play Again</a>
+    </div>
+
+
+  </div>
+
+  <script src="connectFour.js"></script>
+</body>
+</html>
